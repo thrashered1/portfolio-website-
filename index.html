@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hristo Todorov - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #000000;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #cccccc;
+        }
+
+        /* Header Section */
+        header {
+            background: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 60px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #000000;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000000;
+            display: inline-block;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: 1.1rem;
+            color: #333333;
+        }
+
+        /* Skills Section */
+        #skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            list-style: none;
+        }
+
+        #skills ul li {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+
+        /* Projects Section */
+        .project-card {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            border: 1px solid #000000;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #333333;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .project-card a:hover {
+            background-color: #333333;
+        }
+
+        /* Contact Section */
+        #contact p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        #contact a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Hristo Todorov</h1>
+        <p>Backend Developer Intern Candidate | Plovdiv, Bulgaria</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Motivated first-year FMI student at Plovdiv University with foundational skills in C#, HTML, CSS, and JavaScript, eager to grow as a Backend Developer. Passionate about building efficient and scalable solutions, I am committed to enhancing my technical expertise through hands-on projects, teamwork, and continuous learning.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C# (Beginner)</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (Beginner)</li>
+            <li>Quick Learner</li>
+            <li>Team Player</li>
+            <li>Problem-Solving</li>
+            <li>English (Fluent)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Calculator</h3>
+            <p>Built a stylish web-based calculator using HTML, CSS, and JavaScript. Features a modern design with responsive buttons for basic arithmetic operations.</p>
+            <a href="https://yourusername.github.io/calculator" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Banking System</h3>
+            <p>A console application in C# simulating a basic banking system, allowing users to create accounts, deposit, withdraw, and check balances. Focused on object-oriented programming principles.</p>
+            <a href="https://github.com/yourusername/banking-system" target="_blank">View Code</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📍 Plovdiv, Bulgaria</p>
+        <p>📞 0878757377</p>
+        <p>📧 <a href="mailto:xtodorov15@gmail.com">xtodorov15@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Hristo Todorov. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetSection.offsetTop - 60,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
